@@ -1,96 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shadow Alibi – Privacy Policy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadow Alibi - Privacy Policy</title>
+<meta name="description" content="Privacy Policy for Shadow Alibi, an Android detective game.">
 <style>
-  body { font-family: Arial, sans-serif; line-height: 1.65; max-width: 900px; margin: 0 auto; padding: 24px; color: #222; background: #fff; }
-  h1 { margin-bottom: 6px; }
-  h2 { margin-top: 28px; }
-  .updated { color: #666; }
-  .notice { background: #f3f4f6; padding: 14px 16px; border-radius: 8px; }
-  a { color: #1558d6; }
+  :root { color-scheme: light; }
+  body {
+    margin: 0; padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb; color: #1d2433; line-height: 1.65;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 32px 18px 56px; }
+  .card {
+    background: #fff; border-radius: 16px; padding: 34px;
+    box-shadow: 0 4px 20px rgba(0,0,0,.07);
+  }
+  h1 { margin-top: 0; color: #18233b; font-size: 34px; }
+  h2 { margin-top: 30px; color: #24375f; font-size: 22px; }
+  h3 { color: #30456f; font-size: 18px; }
+  .updated { color: #667085; font-size: 14px; }
+  .notice {
+    background: #eef4ff; border-left: 4px solid #4267b2;
+    padding: 14px 16px; border-radius: 8px; margin: 20px 0;
+  }
+  ul { padding-left: 24px; }
+  a { color: #2457b8; }
+  .footer { margin-top: 28px; color: #667085; font-size: 13px; }
+  @media (max-width: 600px) {
+    .card { padding: 22px; }
+    h1 { font-size: 28px; }
+  }
 </style>
 </head>
 <body>
-<h1>Shadow Alibi – Privacy Policy</h1>
-<p class="updated"><strong>Last updated:</strong> September 2, 2026</p>
+<div class="container">
+  <main class="card">
+    <h1>Shadow Alibi – Privacy Policy</h1>
+    <p class="updated"><strong>Effective date:</strong> September 4, 2026</p>
 
-<p>This Privacy Policy explains how <strong>[Developer Name]</strong> ("we", "us", or "our") handles information when you use the mobile game <strong>Shadow Alibi</strong> (the "App").</p>
+    <div class="notice">
+      This Privacy Policy explains how Shadow Alibi handles information when you use the Shadow Alibi Android game.
+      Please read it together with the privacy disclosures shown in the app and on Google Play.
+    </div>
 
-<p>Shadow Alibi is a detective and mystery game. The App does not require you to create an account or sign in to play.</p>
+    <h2>1. About Shadow Alibi</h2>
+    <p>
+      Shadow Alibi is an Android detective game. Players can play cases, earn experience points and coins,
+      collect stars, maintain season progress, and optionally create or sign in to an account to synchronize
+      game progress using cloud services.
+    </p>
 
-<div class="notice">
-<strong>Important:</strong> Before publishing this policy, replace <strong>[Developer Name]</strong> and <strong>[Developer Email]</strong> below with your real developer name and support email address.
+    <h2>2. Information We Collect</h2>
+
+    <h3>2.1 Account information</h3>
+    <p>
+      If you create or use an account, Shadow Alibi uses Firebase Authentication. Depending on the sign-in
+      method you use, this may include your email address and authentication information. If Google Sign-In
+      is enabled for a version of the app, information made available by Google for authentication, such as
+      your name, email address, profile information, and a unique account identifier, may also be processed.
+    </p>
+    <p>
+      Passwords used with email/password authentication are handled by Firebase Authentication; Shadow Alibi
+      does not have access to your password in readable form.
+    </p>
+
+    <h3>2.2 Game progress and account data</h3>
+    <p>
+      When you use cloud synchronization, Shadow Alibi may store game information associated with your
+      account, such as:
+    </p>
+    <ul>
+      <li>Experience points (XP)</li>
+      <li>Coins</li>
+      <li>Cases solved and completed-case information</li>
+      <li>Stars earned</li>
+      <li>Purchased in-game items</li>
+      <li>Current season progress</li>
+      <li>Previous season records, including XP, cases solved, stars, and highest rank</li>
+    </ul>
+
+    <h3>2.3 Information processed by advertising services</h3>
+    <p>
+      Shadow Alibi uses Google Mobile Ads (AdMob) to display advertisements, including rewarded and
+      interstitial advertisements. Google and its advertising partners may automatically process information
+      such as device identifiers, IP address, ad interactions, diagnostics, and other information required
+      for advertising, fraud prevention, measurement, and delivery, subject to their policies and your
+      applicable consent choices.
+    </p>
+    <p>
+      During development and testing, Shadow Alibi may use Google's test advertisements. Production
+      advertising configurations may change in future app versions.
+    </p>
+
+    <h3>2.4 Information stored locally</h3>
+    <p>
+      Shadow Alibi also stores certain gameplay and session information locally on your Android device so that
+      the game can continue to function offline and preserve local progress. Local storage may include game
+      progress, case-rotation information, daily challenge information, and settings needed for gameplay.
+    </p>
+
+    <h2>3. How We Use Information</h2>
+    <p>Information is used to:</p>
+    <ul>
+      <li>Create and authenticate player accounts.</li>
+      <li>Save and restore game progress across sessions and devices when cloud synchronization is used.</li>
+      <li>Maintain XP, coins, stars, case progress, seasons, ranks, and other gameplay records.</li>
+      <li>Provide rewarded advertisements and interstitial advertisements.</li>
+      <li>Prevent abuse, fraud, and misuse of advertising or account services.</li>
+      <li>Maintain, troubleshoot, secure, and improve the game and its supporting services.</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <p>Shadow Alibi uses third-party services that may process information according to their own policies:</p>
+    <ul>
+      <li><strong>Firebase Authentication</strong> – account creation, sign-in, and authentication.</li>
+      <li><strong>Firebase Cloud Firestore</strong> – cloud storage and synchronization of game progress.</li>
+      <li><strong>Google Mobile Ads (AdMob)</strong> – advertising, ad measurement, fraud prevention, and related services.</li>
+    </ul>
+    <p>
+      These services may process information on our behalf or independently as described in their applicable
+      privacy documentation. Their practices are governed by their respective terms and privacy policies.
+    </p>
+
+    <h2>5. Data Sharing</h2>
+    <p>
+      We do not sell your personal information. Information may be transmitted to the third-party service
+      providers described above when necessary to provide authentication, cloud synchronization, advertising,
+      security, measurement, or other app functionality.
+    </p>
+    <p>
+      Information may also be disclosed where required by applicable law, legal process, or to protect the
+      rights, safety, security, or integrity of the app and its users.
+    </p>
+
+    <h2>6. Data Security</h2>
+    <p>
+      Shadow Alibi relies on Firebase and Google services that use security measures appropriate to the
+      services they provide. Data transmitted between the app and supported cloud services is sent using
+      secure network connections where provided by those services.
+    </p>
+    <p>
+      No method of electronic storage or transmission is completely secure, so absolute security cannot be
+      guaranteed.
+    </p>
+
+    <h2>7. Data Retention</h2>
+    <p>
+      Account and cloud game data are retained while your account remains active or for as long as necessary
+      to provide the requested services, comply with legal obligations, resolve disputes, enforce agreements,
+      and maintain legitimate business and security records.
+    </p>
+    <p>
+      Local gameplay data remains on your device until it is removed by the app, cleared by the Android system,
+      or otherwise deleted by you.
+    </p>
+
+    <h2>8. Account and Data Deletion</h2>
+    <p>
+      If you create an account, you may request deletion of your account and associated Shadow Alibi cloud
+      game data. To request deletion, contact the developer using the privacy contact information provided
+      below and include the email address associated with your account.
+    </p>
+    <p>
+      After verifying the request as reasonably necessary, the developer will delete the Firebase account and
+      associated cloud game data under the applicable deletion process, except for information that must be
+      retained where required by law or for legitimate security purposes.
+    </p>
+    <p>
+      You can also remove local app data by uninstalling Shadow Alibi or clearing the app's storage through
+      Android settings. Removing local data does not by itself delete an online Firebase account.
+    </p>
+
+    <h2>9. Children's Privacy</h2>
+    <p>
+      Shadow Alibi is not specifically directed to children. We do not knowingly collect personal information
+      from children in violation of applicable law. If you believe a child has provided personal information
+      inappropriately, please contact us so that the information can be reviewed and deleted when required.
+    </p>
+
+    <h2>10. Your Choices</h2>
+    <ul>
+      <li>You can choose whether to create/sign in to an account or continue using guest/local gameplay where available.</li>
+      <li>You can request deletion of your account and associated cloud game data.</li>
+      <li>You can manage Android device permissions and applicable advertising/privacy choices provided by Google and the app.</li>
+    </ul>
+
+    <h2>11. Changes to This Privacy Policy</h2>
+    <p>
+      This Privacy Policy may be updated when Shadow Alibi's features, third-party services, or data practices
+      change. The updated version will be posted at this URL with a revised effective date.
+    </p>
+
+    <h2>12. Contact</h2>
+    <p>
+      For privacy questions, data deletion requests, or other privacy-related concerns, contact the Shadow Alibi
+      developer through the contact email shown on the official Google Play listing for Shadow Alibi.
+    </p>
+    <p>
+      <strong>App:</strong> Shadow Alibi<br>
+      <strong>Package:</strong> com.shadowalibi.game
+    </p>
+
+    <h2>13. Related Google Policies</h2>
+    <p>
+      Shadow Alibi uses Google services such as Firebase and Google Mobile Ads. Users should also review the
+      applicable Google privacy and service information for those services.
+    </p>
+
+    <div class="footer">
+      © 2026 Shadow Alibi. All rights reserved.
+    </div>
+  </main>
 </div>
-
-<h2>1. Information We Collect</h2>
-<p>Shadow Alibi is designed to minimize personal data collection. The App does not intentionally collect your name, home address, phone number, contacts, photos, precise location, health information, or other personal information directly through the game.</p>
-
-<h3>Game Progress and Settings</h3>
-<p>The App stores gameplay information on your device so that your progress can be retained. This may include items such as:</p>
-<ul>
-  <li>XP and detective rank</li>
-  <li>In-game coin balance</li>
-  <li>Cases solved and completed case numbers</li>
-  <li>Stars earned</li>
-  <li>Daily challenge/streak information</li>
-  <li>Other local game progress and settings required for the App to function</li>
-</ul>
-<p>This information is stored locally on your device using Android application storage and is not intentionally transmitted to our own server.</p>
-
-<h2>2. In-App Purchases</h2>
-<p>Shadow Alibi offers optional purchases of virtual in-game coins through Google Play Billing. Current packages may include:</p>
-<ul>
-  <li>2,000 coins for ₹50</li>
-  <li>4,000 coins for ₹100</li>
-  <li>6,000 coins for ₹150</li>
-</ul>
-<p>Payments are processed by Google Play. We do not receive or store your credit card, debit card, bank account, UPI PIN, or other payment credentials.</p>
-<p>Google Play may process purchase-related information, such as transaction and purchase information, according to Google's own policies and terms. For more information, please review Google's privacy policy and Google Play terms.</p>
-
-<h2>3. Third-Party Services</h2>
-<p>The App may use services provided by Google, including Google Play services and Google Play Billing, to support app distribution, purchases, and related functionality.</p>
-<p>These services may process information according to their own privacy policies. We encourage you to review Google's privacy documentation for details about information handled by Google.</p>
-
-<h2>4. Advertising</h2>
-<p>Shadow Alibi does not currently display third-party advertisements in the App.</p>
-
-<h2>5. Data Sharing</h2>
-<p>We do not sell your personal information.</p>
-<p>We do not intentionally share personal information with advertisers.</p>
-<p>Information may be processed by third-party service providers when necessary to provide platform services, process purchases, maintain security, comply with legal obligations, or operate the App.</p>
-
-<h2>6. Data Security</h2>
-<p>We take reasonable measures to protect information handled by the App. Because local gameplay data is stored on your device, the security of that data can also depend on the security of your device and operating system.</p>
-
-<h2>7. Data Retention and Deletion</h2>
-<p>Local gameplay data remains on your device until it is removed by you, the App is uninstalled, or the App's data is cleared through Android settings.</p>
-<p>Because Shadow Alibi does not require an account and does not maintain your gameplay profile on our own server, there is generally no separate account or server profile for us to delete.</p>
-<p>Purchase records handled by Google Play may be retained by Google according to Google's policies and legal requirements.</p>
-
-<h2>8. Children's Privacy</h2>
-<p>Shadow Alibi is not specifically directed at children. We do not knowingly collect personal information directly from children through the App.</p>
-<p>If you believe that a child has provided personal information to us, please contact us at <strong>[Developer Email]</strong> so that we can review the matter.</p>
-
-<h2>9. Your Choices</h2>
-<p>You can stop using the App at any time and uninstall it from your device. You can also clear the App's locally stored data through Android settings, subject to how Android and Google Play handle purchase records.</p>
-
-<h2>10. Changes to This Privacy Policy</h2>
-<p>We may update this Privacy Policy when the App, its features, or applicable legal requirements change. When we make changes, we will update the "Last updated" date at the top of this page.</p>
-
-<h2>11. Contact Us</h2>
-<p>If you have questions, concerns, or requests regarding this Privacy Policy or Shadow Alibi, contact us:</p>
-<p>
-<strong>Developer:</strong> [Developer Name]<br>
-<strong>Email:</strong> <a href="mailto:[Developer Email]">[Developer Email]</a>
-</p>
-
-<h2>12. Google Privacy Policy</h2>
-<p>Google services used by the App are subject to Google's policies. You can review Google's privacy information on Google's official website.</p>
-
-<p><strong>Shadow Alibi</strong><br>
-Every suspect has a story. Find the lie.</p>
 </body>
 </html>
